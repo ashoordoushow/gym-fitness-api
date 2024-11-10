@@ -3,14 +3,6 @@ User.create!([
   {name: "susan", email: "susan@yahoo.com", password_digest: "$2a$12$qCTcCoyoE05QW7nCEjk2CeUZ36ZH57dmnOZqkW0nYnfoyIwgyWK/W", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCNpPbSd_CoX49aOh3yIatzexlMFZGGjd7ww&s"},
   {name: "jordan", email: "jordan@comcast.org", password_digest: "$2a$12$xJ81Uky0e.MiH/hVahK.dO9XKpKe0nIyKEawJhH8ny5bDoCRVZ2Dm", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk740kSKRQ6-Zqea74Ftb6XQyGHQLbTt0MNQ&s"}
 ])
-Routine.create!([
-  {user_id: 1, exercise_id: 1, reps: 3, sets: "5 sets"},
-  {user_id: 3, exercise_id: 1, reps: 8, sets: "3 sets"},
-  {user_id: 2, exercise_id: 3, reps: 5, sets: "5 sets"},
-  {user_id: 1, exercise_id: 3, reps: 10, sets: "3 sets"},
-  {user_id: 2, exercise_id: 9, reps: 15, sets: "3 sets"},
-  {user_id: 2, exercise_id: 7, reps: 8, sets: "5 sets"}
-])
 Exercise.create!([
   {name: "Bench Press", description: "The bench press is a strength training exercise that involves lying on a bench and pressing a weighted barbell or dumbbells upward from chest level, primarily targeting the chest, shoulders, and triceps.", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSht1w_kuhsbWD5km6h9OmrTaB09LgxRWdO0g&s", video_url: "https://www.youtube.com/watch?v=SCVCLChPQFY"},
   {name: "Deadlift", description: "A compound movement targeting the lower back, glutes, hamstrings, and core.", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_1Tb0f7scqTAOg2DdeATrnvK-yRLQF6M5Hw&s", video_url: "https://www.youtube.com/watch?app=desktop&v=op9kVnSso6Q"},
@@ -23,3 +15,12 @@ Exercise.create!([
   {name: "Skull Crushers", description: "A triceps-focused exercise performed with an EZ bar or dumbbells.", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4Ot3MDPE9HkslAWe932WrT8afT-KcapC0CA&s", video_url: "https://www.youtube.com/watch?v=D47mYdoKllE"},
   {name: "Chest Fly", description: "Targets the chest muscles (pectorals) and can be done using dumbbells or a machine.", image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSez9Spp_1QbGnjxa3e1XfH0nWrMwle2TtFGQ&s", video_url: "https://www.youtube.com/watch?v=Nhvz9EzdJ4U"}
 ])
+Routine.create!([
+  {user_id: 1, exercise_id: 1, reps: 3, sets: "5 sets"},
+  {user_id: 3, exercise_id: 1, reps: 8, sets: "3 sets"},
+  {user_id: 2, exercise_id: 3, reps: 5, sets: "5 sets"},
+  {user_id: 1, exercise_id: 3, reps: 10, sets: "3 sets"},
+  {user_id: 2, exercise_id: 9, reps: 15, sets: "3 sets"},
+  {user_id: 2, exercise_id: 7, reps: 8, sets: "5 sets"}
+])
+

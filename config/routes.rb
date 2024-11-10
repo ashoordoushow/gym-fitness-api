@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get "up" => "rails/health#show", as: :rails_health_check
 
   get "/exercises" => "exercises#index"
+  patch "/exercises/:id" => "exercises#update"
   
   get "/routines" => "routines#index"
   post "/routines" => "routines#create"
