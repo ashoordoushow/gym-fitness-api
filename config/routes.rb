@@ -13,7 +13,6 @@ Rails.application.routes.draw do
   post "/routines" => "routines#create"
 
   post "/users" => "users#create"
-
   post "/sessions" => "sessions#create"
 
   # Defines the root path route ("/")
