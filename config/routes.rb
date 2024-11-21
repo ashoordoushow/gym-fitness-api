@@ -12,6 +12,7 @@ Rails.application.routes.draw do
   get "/routines" => "routines#index"
   post "/routines" => "routines#create"
 
+  get "/users/current" => "users#show"
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
 
