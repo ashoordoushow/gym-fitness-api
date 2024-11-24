@@ -3,6 +3,21 @@ require "active_support/core_ext/integer/time"
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  # config/environments/production.rb
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+  address:              'smtp.sendgrid.net',      # Replace with your SMTP provider's address
+  port:                 587,                      # Commonly used port for TLS
+  domain:               'yourdomain.com',         # Replace with your application's domain
+  user_name:            ENV['SMTP_USER_NAME'],    # Environment variable for your SMTP username or API key
+  password:             ENV['SMTP_PASSWORD'],     # Environment variable for your SMTP password or API key
+  authentication:       'plain',                  # Common authentication type
+  enable_starttls_auto: true                      # Enable secure connection
+  } 
+
+  config.action_mailer.default_url_options = { host: 'yourapp.com', protocol: 'https' }
+
+
   # Code is not reloaded between requests.
   config.enable_reloading = false
 

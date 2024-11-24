@@ -18,6 +18,11 @@ Rails.application.routes.draw do
   post "/users" => "users#create"
   post "/sessions" => "sessions#create"
 
+  post "/password/forgot" => "passwords#forgot"
+  post "/password/verify_code" => "passwords#verify_code"
+  post "/password/reset" => "passwords#reset"
+
+
   # Defines the root path route ("/")
   # root "posts#index"
 end
