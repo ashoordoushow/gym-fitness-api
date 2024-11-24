@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   
   get "/routines" => "routines#index"
   post "/routines" => "routines#create"
+  patch "/routines/:id" => "routines#update"
+  delete "/routines/:id" => "routines#destroy"
 
   get "/users/current" => "users#show"
   post "/users" => "users#create"
