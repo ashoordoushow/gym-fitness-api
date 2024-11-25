@@ -14,6 +14,7 @@ class ExercisesController < ApplicationController
       description: params[:description] || @exercise.description,
       image_url: params[:image_url] || @exercise.image_url,
       video_url: params[:video_url] || @exercise.video_url,
+      category: params[:category] || @exercise.category,
     )
     render :show
   end
