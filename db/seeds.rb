@@ -1,3 +1,10 @@
+User.delete_all
+Routine.delete_all
+Exercise.delete_all
+
+
+
+
 User.create!([
   {name: "bob", email: "bob@hotmail.com", password_digest: "$2a$12$bOeI1Yuon.a9I7boxVhOvuD851l0EWGVQo8F5.gsxTrLQ1EQo/I1a", image_url: "n/a"},
   {name: "susan", email: "susan@yahoo.com", password_digest: "$2a$12$ptSMgN0e1RhADG4z.lOCJeDey3YcbKUzbw.q8AWJE02S0AS.UWBrm", image_url: "n/a"},
