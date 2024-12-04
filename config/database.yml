@@ -12,21 +12,11 @@ default: &default
 development:
   <<: *default
   database: gym_fitness_api_development
-  host: localhost
-  username: <%= ENV["DEV_PGUSER"] || "your_local_user" %>
-  password: <%= ENV["DEV_PGPASSWORD"] || "your_local_password" %>
 
 test:
   <<: *default
   database: gym_fitness_api_test
-  host: localhost
-  username: <%= ENV["TEST_PGUSER"] || "your_local_user" %>
-  password: <%= ENV["TEST_PGPASSWORD"] || "your_local_password" %>
 
 production:
   <<: *default
-  database: <%= ENV["PGDATABASE"] %>
-  username: <%= ENV["PGUSER"] %>
-  password: <%= ENV["PGPASSWORD"] %>
-  host: <%= ENV["PGHOST"] %>
-  port: <%= ENV.fetch("PGPORT", 5432) %>
+  # The database name, username, and password will be sourced from environment variables.
