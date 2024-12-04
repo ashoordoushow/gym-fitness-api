@@ -19,4 +19,5 @@ test:
 
 production:
   <<: *default
+  url: <%= ENV["DATABASE_URL"] %>
   # The database name, username, and password will be sourced from environment variables.
