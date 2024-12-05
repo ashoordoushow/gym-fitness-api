@@ -1,6 +1,6 @@
 # Gym Fitness API
 
-The **Gym Fitness API** is the backend for the **BUILT TO CONQUER** platform, built with Ruby on Rails and PostgreSQL. It powers user management, workout schedules, memberships, and other gym-related functionalities.
+The **Gym Fitness API** is the backend for the **BUILT TO CONQUER** platform (https://built-to-conquer.up.railway.app/), built with Ruby on Rails and PostgreSQL. It powers user management, workout schedules, memberships, and other gym-related functionalities.
 
 ## Prerequisites
 
